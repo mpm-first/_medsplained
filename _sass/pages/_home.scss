@@ -62,7 +62,7 @@
             &.active {
               opacity: 1;
               text-indent: 0;
-              @include transition(all 1.1s ease-out);
+              @include transition(all 1s linear);
             }
           }
         }
