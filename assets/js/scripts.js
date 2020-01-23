@@ -95,4 +95,12 @@ jQuery(function($) {
     if (scroll_distance + ($win.height()/2) >= $el.offset().top) $el.addClass('in-view');
     else $el.removeClass('in-view');
   };
+
+  //
+  // SIGNUP
+  //
+  $('#signup .help-with input[type=radio]').change(function() {
+    console.log($(this).attr('value'));
+    $('.description.'+$(this).attr('value')).show().siblings('span').hide();
+  });
 });
