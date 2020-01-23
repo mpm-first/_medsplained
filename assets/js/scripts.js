@@ -103,4 +103,9 @@ jQuery(function($) {
     console.log($(this).attr('value'));
     $('.description.'+$(this).attr('value')).show().siblings('span').hide();
   });
+
+  // $("#signup form").on('submit', function(event) {
+  //   event.preventDefault();
+  //   console.log($(this).serialize());
+  // })
 });
